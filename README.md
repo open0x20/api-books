@@ -49,3 +49,19 @@ HTTP/1.1 200 OK
 Content-Type: image/jpeg
 <<blob>>
 ```
+
+### Configuration
+Setup the paths to the PDFs in `config/services.yaml`. Simply add them
+to the paths array. No trailing slash.
+```
+parameters:
+    data_dir: '%kernel.project_dir%/var'
+    allowed_types: ['epub','mobi','pdf']
+    paths: [
+            '/my/pdf/collection',
+            '/home/user/Documents',
+            '/mnt/rpi-nas/hdd/my-awesome-pdfs',
+            '/var/www/html/books/var'
+    ]
+```
+Files are being matched by the extensions provided in `allowed_types`.
