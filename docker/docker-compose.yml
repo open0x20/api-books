@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  books:
+    container_name: books_fpm_nginx
+    build: ./
+    volumes:
+      - ../:/var/www/html/books
+    ports:
+      - "80:80"
+    expose:
+      - "80"
