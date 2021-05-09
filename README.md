@@ -27,7 +27,7 @@ HTTP/1.1 200 OK
       "types": [
         {
           "type": "pdf",
-          "url": "\/book\/html_for_dummies_2nd_edition.pdf"
+          "url": "/book/html_for_dummies_2nd_edition.pdf"
         }
       ]
     }
