@@ -46,8 +46,7 @@ class DefaultController extends AbstractController
 
         // Response
         return new Response($coverData['data'], Response::HTTP_OK, [
-            'Content-Type' => 'application/jpg',
-            'Content-Disposition' => 'attachment; filename="cover.jpg"'
+            'Content-Type' => 'image/jpeg'
         ]);
     }
 
