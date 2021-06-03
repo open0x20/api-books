@@ -7,13 +7,12 @@ parameters:
     data_dir: '%kernel.project_dir%/var'
     allowed_types: ['epub','mobi','pdf']
     paths: [
-            '/mnt/rpi-nas/hdd/@tacoMichael/books/epub',
-            '/mnt/rpi-nas/hdd/@tacoMichael/books/mobi',
-            '/mnt/rpi-nas/hdd/@tacoMichael/books/pdf',
-            '/mnt/rpi-nas/hdd/@andererJan/linux_books/epub',
-            '/mnt/rpi-nas/hdd/@andererJan/linux_books/mobi',
-            '/mnt/rpi-nas/hdd/@andererJan/linux_books/pdf',
-            '/var/www/html/books/var'
+            '/mnt/rpi-nas/@tacoMichael/books/epub',
+            '/mnt/rpi-nas/@tacoMichael/books/mobi',
+            '/mnt/rpi-nas/@tacoMichael/books/pdf',
+            '/mnt/rpi-nas/@andererJan/linux_books/epub',
+            '/mnt/rpi-nas/@andererJan/linux_books/mobi',
+            '/mnt/rpi-nas/@andererJan/linux_books/pdf'
     ]
 
 services:
