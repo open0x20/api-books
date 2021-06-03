@@ -28,6 +28,7 @@ class DefaultController extends AbstractController
         // Response
         return new Response($bookData['data'], Response::HTTP_OK, [
             'Content-Type' => 'application/' . $bookData['extension'],
+            'Access-Control-Allow-Origin' => '*'
         ]);
     }
 
@@ -46,7 +47,8 @@ class DefaultController extends AbstractController
 
         // Response
         return new Response($coverData['data'], Response::HTTP_OK, [
-            'Content-Type' => 'image/jpeg'
+            'Content-Type' => 'image/jpeg',
+            'Access-Control-Allow-Origin' => '*'
         ]);
     }
 

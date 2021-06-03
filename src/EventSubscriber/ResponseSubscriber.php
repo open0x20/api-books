@@ -65,7 +65,8 @@ class ResponseSubscriber implements EventSubscriberInterface
 
         // Create new symfony response object
         $response = new Response($responseString, $responseDto->getMeta()->getCode(), array(
-            'Content-Type' => 'application/json'
+            'Content-Type' => 'application/json',
+            'Access-Control-Allow-Origin' => '*'
         ));
 
         $event->setResponse($response);
